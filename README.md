@@ -30,7 +30,7 @@
   title="Optional title"
   style="display: inline-block; margin: 0 auto; width: 300px"> \
   
-  Yayın ekle kısmına girdiğimizde ise istediğimiz araştırmacıyı seçerek yayın adı, yayın türü, yayın yeri, yayın yılı bilgilerini giriyoruz ve veritabanına kaydediyoruz.\
+  Yayın ekle kısmına girdiğimizde ise istediğimiz araştırmacıyı seçerek yayın adı, yayın türü, yayın yeri, yayın yılı bilgilerini giriyoruz ve veritabanına kaydediyoruz.
 
   <img
   src="/images/4.png"
