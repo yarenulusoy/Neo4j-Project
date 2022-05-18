@@ -13,3 +13,4 @@
  Araştırmacının çalıştığı kişilerin üzerine tıklandığında tıklanılan araştırmacı içinde aynı bilgiler gösterilir.\
  Ayrıca farklı bir sekmede araştırmacıya ait yayınlar, birlikte yayın yaptığı diğer araştırmacılar, yayın türleri, yayın yerleri ve yıl bilgisi Neo4j çizge yapısı kullanılarak görselleştirilmiştir.\
   
+<img src="/images/1.png" alt="Alt text" title="Optional title">
