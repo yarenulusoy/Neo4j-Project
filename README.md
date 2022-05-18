@@ -1,5 +1,5 @@
 # Neo4j-Project
- Neo4j graf veritabanı ile web uygulaması
+ Neo4j graf veritabanı ile python flask web uygulaması
  
 ### ● Yönetici arayüzü
  Admin,kullanıcı adı ve şifresini kullanarak giriş yapabilir.\
@@ -23,7 +23,9 @@
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto;  width: 300px"> \
-   Giriş yaptıktan sonra Araştırmacı ekle sayfasından istediğimiz araştırmacıları adı ve soyadıyla ekliyoruz.\
+  
+   Giriş yaptıktan sonra Araştırmacı ekle sayfasından istediğimiz araştırmacıları adı ve soyadıyla ekliyoruz.
+   
   <img
   src="/images/3.png"
   alt="Alt text"
@@ -50,9 +52,9 @@ araştırmacının çalıştığı kişiler,yazdığı yayınlar ve gerekli bilg
   src="/images/6.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto;  width: 300px">\
+  style="display: inline-block; margin: 0 auto;  width: 400px">\
   <img
   src="/images/7.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; width: 300px">
+  style="display: inline-block; margin: 0 auto; width: 400px">
