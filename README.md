@@ -17,32 +17,38 @@
   src="/images/1.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto;  width: 300px">
   <img
   src="/images/2.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 200px">
+  style="display: inline-block; margin: 0 auto;  width: 300px">
   <img
+  Giriş yaptıktan sonra Araştırmacı ekle sayfasından istediğimiz araştırmacıları adı ve soyadıyla ekliyoruz.
+
   src="/images/3.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; width: 300px">
+  Yayın ekle kısmına girdiğimizde ise istediğimiz araştırmacıyı seçerek yayın adı, yayın türü, yayın yeri, yayın yılı bilgilerini giriyoruz ve veritabanına kaydediyoruz.
+
   <img
   src="/images/4.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; width: 300px">
   <img
   src="/images/5.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; width: 300px">
   <img
+  Kullanıcı giriş kısmında girdiğimizde ise karşımıza direk tüm yayınlar listesi geliyor. Burda arama kısmında istediğimiz araştırmacı adını, yayın adını, yayın yerini ve yılını aratıp listelettirebiliriz. Ayrıca farklı bir butonda girdiğimiz ve ilişkilendirdiğimiz tüm verilerin grafiği bulunmakta.Yeni sekmede ise tıkladığımız 
+araştırmacının çalıştığı kişiler,yazdığı yayınlar ve gerekli bilgiler neovis.js kullanarak görselleştirdiğimiz veritabanımızın grafiği geliyor.
   src="/images/6.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto;  width: 300px">
   <img
   src="/images/7.png"
   alt="Alt text"
