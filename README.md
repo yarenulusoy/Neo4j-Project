@@ -4,8 +4,8 @@
 # ● Yönetici arayüzü
  Admin,kullanıcı adı ve şifresini kullanarak giriş yapabilir.
  
- Admin tarafından araştırmacı eklenebilir.(ArastirmaciAdi,ArastirmaciSoyadi)
- Admin tarafından herhangi bir araştırmacıya yayın eklenebilir.(YayinAdi, YayinYili, YayinYeri,YayinTuru)
+ Admin tarafından araştırmacı eklenebilir (ArastirmaciAdi,ArastirmaciSoyadi).
+ Admin tarafından herhangi bir araştırmacıya yayın eklenebilir (YayinAdi, YayinYili, YayinYeri,YayinTuru).
  
   
 # ● Kullanıcı Arayüzü
