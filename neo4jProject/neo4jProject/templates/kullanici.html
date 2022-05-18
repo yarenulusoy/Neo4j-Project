@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+</head>
+<style>
+    #myInput {
+     /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 95%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+#aramadiv{
+width:1000px;
+display:flex;
+}
+</style>
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+ for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    td2 = tr[i].getElementsByTagName("td")[1];
+    td3 = tr[i].getElementsByTagName("td")[2];
+    td4 = tr[i].getElementsByTagName("td")[3];
+    td5 = tr[i].getElementsByTagName("td")[4];
+    if (td || td2 || td3 || td4 || td5) {
+      txtValue = td.textContent || td.innerText;
+      txtValue2 = td2.textContent || td2.innerText;
+      txtValue3 = td3.textContent || td3.innerText;
+      txtValue4 = td4.textContent || td2.innerText;
+      txtValue5 = td5.textContent || td3.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue2.toUpperCase().indexOf(filter) > -1 || txtValue3.toUpperCase().indexOf(filter) > -1 || txtValue4.toUpperCase().indexOf(filter) > -1 || txtValue5.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+
+    }
+  }
+}
+
+function myFunction2(adi) {
+
+  var input, filter, table, tr, td, i, txtValue;
+  filter = adi.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+ for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td ) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+
+    }
+  }
+    }
+</script>
+
+<body style="background:#C0C0C0;">
+<div class="divkullanici" style="background:#F9FAE7; width:1300px;height:800px;margin-left:120px;margin-top:20px;">
+
+ <div id="aramadiv"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Arama Yap"> <button style="margin-left:230px;width:200px;" class="btn btn-block text-center my-3" name="login" type="submit" value="login" > <a href="tümverigrafik" class="gradient-button gradient-button-1">Tüm Veriler Grafiği</a></button></div>
+
+<table id="myTable">
+  <tr class="header">
+        <th style="width:20%;">Ad Soyad</th>
+       <th style="width:20%;">Yayın Adı</th>
+        <th style="width:20%;">Yayın Yılı</th>
+       <th style="width:20%;">Yayın Türü</th>
+        <th style="width:20%;">Yayın Yeri</th>
+
+
+  </tr>
+
+
+      {% for a,b,c,d,e,f in info %}
+        <tr>
+
+             <td> {% for i in range(a|length) %}<a onclick="window.open('grafik/{{b[i]}}');window.open('grafik3/{{b[i]}}');" href='javascript: myFunction2({{a[i] | tojson}});' class="row-link">{{a[i]}} {{b[i]}}  </a>{% endfor %}</td>
+
+
+              <td>{{c}}</td>
+            <td>{{d}}</td>
+            <td>{{e}}</td>
+            <td>{{f}}</td>
+
+        </tr>
+      {% endfor %}
+
+</table>
+
+
+
+
+
+</div>
+
+</body>
+</html>

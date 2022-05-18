@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+</head>
+<body>
+<{% include 'sol_cubuk.html' %}
+<div class="admin-content">
+    <div class="container">
+      <form method="post" class="pt-3">
+           <h style="font-family: 'Arial Bold', sans-serif;font-style: bold;font-weight:20px;font-size:15px;margin-left:250px;">YAZAR BİLGİLERİ</h>
+<br><br><br>
+          <label for="ad">Yazar Adı:</label>
+          <input type="text" id="ad" name="ad">
+<br><br><br>
+          <label for="soyad">Yazar Soyadı:</label>
+          <input type="text" id="soyad" name="soyad">
+
+<br><br><br><br>
+         <button style="margin-left:230px;width:200px;"class="btn btn-block text-center my-3"name="yazar" type="submit" value="yazar" >YAZAR EKLE</button>
+        </form>
+      </div>
+</div>
+</body>
+</html>

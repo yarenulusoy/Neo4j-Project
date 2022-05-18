@@ -1,0 +1,208 @@
+import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #eee;
+    height: 800px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, rgb(61, 65, 191) 10%, rgba(156, 170, 238, 0.4) 90%) no-repeat
+}
+
+.div1{
+    padding-top: 100px;
+    height: 500px;
+    align-items=center;
+    text-align: center;
+}
+
+.gradient-button {
+    text-decoration:none;
+    margin: 20px;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.gradient-button-1 {background-image: linear-gradient(to right, #e4c9f6 0%, #7c49f4 51%, #ffffff 100%)}
+.gradient-button-1:hover { background-position: right center; }
+
+.gradient-button-2 {background-image: linear-gradient(to right, #7c49f4 0%, #f2e4fb 51%, #7c49f4 100%)}
+.gradient-button-2:hover { background-position: right center; }
+
+.login-img{
+    text-align: center;
+}
+
+.login-img img{
+    width: 200px;
+    height: 200px;
+
+}
+
+
+
+
+
+.a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*sol bar */
+.wrapper .sidebar{
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #293b4d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  padding: 50px 0;
+  transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+  color: rgb(206, 240, 253);
+  font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+  display: block;
+  padding: 20px 15px;
+  color: rgb(241, 237, 237);
+  font-size: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.wrapper .sidebar ul li a .icon{
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+  color: #262a2c;
+
+  background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+  color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+  display: block;
+}
+.admin-content {
+  flex: 9;
+  height: 500px;
+  padding: 10px;
+
+}
+.admin-content h1{
+  text-align: center;
+  margin-top:50px;
+  margin-left:200px;
+  font-size:50px;
+  color: rgb(39, 39, 39);
+  text-shadow:#818181 3px 3px 5px;
+}
+
+
+
+
+
+
+
+       /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  margin-top:20px;
+  margin-left:500px;
+  width:700px;
+  height:500px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.btn.btn-block {
+    border-radius: 20px;
+    background-color: #1e0d8a;
+    color: #fff
+}
+
+.btn.btn-block:hover {
+    background-color: #38268be0
+}

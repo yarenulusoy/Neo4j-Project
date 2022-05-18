@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+</head>
+<body>
+<{% include 'sol_cubuk.html' %}
+<div class="admin-content">
+    <div class="container" style="height:680px;">
+      <form method="post" class="pt-3">
+   <h style="font-family: 'Arial Bold', sans-serif;font-style: bold;font-weight:20px;font-size:15px;margin-left:250px;">YAYIN BİLGİLERİ</h>
+<br><br>
+          <label for="ad">Yazar Adı:</label>
+
+          <select name="ad" id="ad">
+
+            {%for x in range(0, uzunluk)%}
+            {% set ad=yazarlar[x][0]%}
+               {% set soyad=yazarlar[x][1]%}
+
+            <option value={{soyad}}>{{yazarlar[x][0]}} {{yazarlar[x][1]}}</option>
+            {% endfor %}
+
+</select>
+<br><br>
+          <label for="yayinadi">Yayın Adı:</label>
+          <input type="text" id="yayinadi" name="yayinadi">
+<br><br>
+          <label for="yayinyili">Yayın Yılı:</label>
+          <input type="text" id="yayinyili" name="yayinyili">
+<br><br>
+          <label for="yayinturu">Yayın Turu:</label>
+          <input type="text" id="yayinturu" name="yayinturu">
+<br><br>
+            <label for="yayinyeri">Yayın Yeri:</label>
+          <input type="text" id="yayinyeri" name="yayinyeri">
+<br>
+          <button style="margin-left:230px;width:200px;"class="btn btn-block text-center my-3"name="yayin" type="submit" value="yayin" >YAYIN EKLE</button>
+
+        </form>
+      </div>
+</div>
+</body>
+</html>
