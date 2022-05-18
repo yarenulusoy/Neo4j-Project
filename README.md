@@ -47,4 +47,4 @@
   src="/images/7.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 100px">
+  style="display: inline-block; margin: 0 auto; width: 100px">
