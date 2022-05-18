@@ -22,7 +22,7 @@
   src="/images/2.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 200px">
   <img
   src="/images/3.png"
   alt="Alt text"
@@ -47,4 +47,4 @@
   src="/images/7.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 200px">
